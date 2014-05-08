@@ -1,167 +1,70 @@
 
-var three = 3
-var two = 2
-var four = "four"
-var five = 5
+[1,2,3,4].map(function(x){
+return x + 100;
+})
 
+[1,2,3,4].map(function(x){
+return {score: x + 100}
+})
 
+[1,2,3,4].map(function(x){
+return {score: x + 100}
+})
 
+var players = [
+{name: 'bob'},
+{name: 'newhart'}
+]
 
+players.forEach(functions(player){
+console.log(player.name);
+})
 
-// Variables
-var dog = {
-  name: "Sealie",
-  nickname: "Seal Puppy",
-  breed: "Labrador Retriever",
-  color: "chocolate",
-  bYear: 1998,
-  dYear: 2014,
-  treat: "bones"
+[1,2,3].forEach
+function forEach() { [native code] }
+[1,2,3].forEach(function(x){
+  console.log(x);
+})
+
+//Object Literall
+var myObject = {
+  dog: "duke",
+  name: "tad",
+  age: 26,
+  cat: ["meow", 1, 2]
+  fish: function (x) {
+    return x*x,
+  }
 }
 
-var referenceToBreed = dog.breed
+console.log(myObject.dog(2))
+// The above log returns 4
 
-var familyMember = {
-  name: "Hannah",
-  nickname: "Bean",
-  relation: "sister",
-  bYear: 1990,
-  dYear: null,
-  age: 24
+
+function firstThree(array){
+    var x = {cool:true};
+    return array.slice(0,3);
 }
 
-// notdef // will return "notdef is not defined" because notdef is not a named variable
-var nope = null // will return "null" because the vaiable is defined, but has no inherent/assigned value
-var undf // will return "undefined" because the variable is named but not defined
-var obj = {} // will return obj {}
+// I wasnt learning anything reading so here goes
 
-// Strings
-var stt = "string-text-here" // will return "string-text-here"; a string is just text/numbers, etc. inside a set of matching parentheses
+alert("Would you like to play a game?");
+prompt("What is your name?")
 
-var eins = "one"
-var zwei = "two"
-  // typing "eins+zwei" in console will return "onetwo" because it concatenates (sticks together) the strings
-var drei = "3"
-var vier = "4"
-  // typing "drei+vier" in console will return "34" because it treats the numerals in a string like text instead of like numbers
-var fuenf = 5
-  // typing "fuenf+6" in console will return "11" because it treats fuenf as a number (5 is not in quotation marks, so it's not a string)
-
-// Booleans
-var richtig = true
-var falsch = false
-  // typing "richtig+falsch" in the console will return "1" because the computer understands true to have a value of 1, and false to have 
-  // a value of 0 (binary code)
-
-// Arrays
-var siebenachtneun = [7, 8, 9]
-  // an array is a group of multiple values that can be assigned to a single variable; arrays are indexed (meaning that each of the the 
-  // values occupies a certain numerical position) starting at a count of zero (imagine that every value is preceded by a comma; count the)
-  // commas to determine which position a value occupies)
-
-  // typing "siebenachtneun" in the console will return "[7, 8, 9]"
-  // typing "siebenachtneun[0]" in the console will return "7" because 7 is in the zero position
-
-// Comparison Operators
-console.log(10 + 10); // addition
-console.log(10 - 10); // subtraction
-
-console.log(10 * 10); // multiplication
-console.log(10 / 10); // division
-
-console.log(10 == 10); // is equal to
-console.log(10 != 10); // is not equal to
-
-console.log(10 === 10); // is identical to (values in exact same format -- letters/numerals/string, etc.)
-console.log(10 !== 10); // is not identical to
-
-console.log(10 > 10); // is greater than
-console.log(10 < 10); // is less than
-
-console.log(10 >= 10); // is greater than or equal to
-console.log(10 <= 10); // is less than or equal to
-
-// If/Else Statements
-if (fuenf=5) {
-  alert("Congratulations, you just learned the German word for five!"); // fuenf equals five, so you will see the alert
-}
-else {
-  alert("Nope, five isn't smaller than four. Sucker."); // fuenf will never not equal five, so you'll never see this alert
+function test(){
+document.write("Hello there!")
 }
 
-if (fuenf<6) {
-  prompt("Yep, five is still less than six. If you'd like to type in a box that will do nothing, go right ahead!")
+console.log(test);
+
+function test(){
+document.write("Hello there! This is a test page. Not sure what I am testing but nevertheles..... Here it is.")
 }
 
-// Methods
+test()
 
-
-// Functions
-function dogAge (tad, joe, whitney, lance, luke, william) {
-  return tad - joe - whitney - lance - luke + william;
-};
-
-// console.log(dogAge(dog.dYear, dog.bYear));
-
-// 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// // I wasnt learning anything reading so here goes
-
-// // alert("Would you like to play a game?");
-// // prompt("What is your name?")
-
-// // function test(){
-// // document.write("Hello there!")
-// // }
-
-// // console.log(test);
-
-// function test(){
-// document.write("Hello there! This is a test page. Not sure what I am testing but nevertheles..... Here it is.")
-// }
-
-// test()
-
-
-
-
-
-// I started playing around with data and pulling it into the console. 
-// Below I created three objects and gave them all data while purposefully leaving some data out.
+// // I started playing around with data and pulling it into the console. 
+// // Below I created three objects and gave them all data while purposefully leaving some data out.
 
 var tad = new Object();
 tad.name = "Thaddeous";
@@ -211,7 +114,7 @@ console.log("My favorite pet was a", duke.breed, "named", duke.petname, ". His n
 console.log("I was born on", tad.birthday, ". and my dog was born in the year", duke.birthday, ".");
 
 
-// This is the start of strings and objects
+// // This is the start of strings and objects
 // Tring to differentiate between the two now
 var myObject = new Object(); 
 myObject['0'] = "f";
@@ -301,8 +204,6 @@ var lisa = new Person(true, 35, "female");
 console.log(lisa);
 
 
-
-
 // function pattern
 var myFunction = function(){return 'foo'};
 console.log(myFunction()); // log 'foo'
@@ -362,6 +263,134 @@ greet.runGreet.call(cody,'foo','bar'); // logs 'cody foo bar'
 // // Data Structures - Objects
 
 // // Data Structures - Arrays
+
+var three = 3
+var two = 2
+var four = "four"
+var five = 5
+
+// Variables
+var dog = {
+  name: "Sealie",
+  nickname: "Seal Puppy",
+  breed: "Labrador Retriever",
+  color: "chocolate",
+  bYear: 1998,
+  dYear: 2014,
+  treat: "bones"
+}
+
+var referenceToBreed = dog.breed
+
+var familyMember = {
+  name: "Hannah",
+  nickname: "Bean",
+  relation: "sister",
+  bYear: 1990,
+  dYear: null,
+  age: 24
+}
+
+// notdef // will return "notdef is not defined" because notdef is not a named variable
+var nope = null // will return "null" because the vaiable is defined, but has no inherent/assigned value
+var undf // will return "undefined" because the variable is named but not defined
+var obj = {} // will return obj {}
+
+// Strings
+var stt = "string-text-here" // will return "string-text-here"; a string is just text/numbers, etc. inside a set of matching parentheses
+
+var eins = "one"
+var zwei = "two"
+  // typing "eins+zwei" in console will return "onetwo" because it concatenates (sticks together) the strings
+var drei = "3"
+var vier = "4"
+  // typing "drei+vier" in console will return "34" because it treats the numerals in a string like text instead of like numbers
+var fuenf = 5
+  // typing "fuenf+6" in console will return "11" because it treats fuenf as a number (5 is not in quotation marks, so it's not a string)
+
+// Booleans
+var richtig = true
+var falsch = false
+  // typing "richtig+falsch" in the console will return "1" because the computer understands true to have a value of 1, and false to have 
+  // a value of 0 (binary code)
+
+// Arrays
+var siebenachtneun = [7, 8, 9]
+  // an array is a group of multiple values that can be assigned to a single variable; arrays are indexed (meaning that each of the the 
+  // values occupies a certain numerical position) starting at a count of zero (imagine that every value is preceded by a comma; count the)
+  // commas to determine which position a value occupies)
+
+  // typing "siebenachtneun" in the console will return "[7, 8, 9]"
+  // typing "siebenachtneun[0]" in the console will return "7" because 7 is in the zero position
+
+// Comparison Operators
+console.log(10 + 10); // addition
+console.log(10 - 10); // subtraction
+
+console.log(10 * 10); // multiplication
+console.log(10 / 10); // division
+
+console.log(10 == 10); // is equal to
+console.log(10 != 10); // is not equal to
+
+console.log(10 === 10); // is identical to (values in exact same format -- letters/numerals/string, etc.)
+console.log(10 !== 10); // is not identical to
+
+console.log(10 > 10); // is greater than
+console.log(10 < 10); // is less than
+
+console.log(10 >= 10); // is greater than or equal to
+console.log(10 <= 10); // is less than or equal to
+
+// If/Else Statements
+if (fuenf=5) {
+  alert("Congratulations, you just learned the German word for five!"); // fuenf equals five, so you will see the alert
+}
+else {
+  alert("Nope, five isn't smaller than four. Sucker."); // fuenf will never not equal five, so you'll never see this alert
+}
+
+if (fuenf<6) {
+  prompt("Yep, five is still less than six. If you'd like to type in a box that will do nothing, go right ahead!")
+}
+
+Methods
+
+
+// Functions
+function dogAge (tad, joe, whitney, lance, luke, william) {
+  return tad - joe - whitney - lance - luke + william;
+};
+
+// console.log(dogAge(dog.dYear, dog.bYear));
+
+// 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
